@@ -73,5 +73,4 @@ Use the following information to connect to your Subnet:
 
 
 ## Conclusion
-Submitted By MKSURESH
-You have successfully set up an Avalanche Subnet, deployed Solidity contracts, and interacted with them using Remix and MetaMask.
+Submitted By MKSURESH, have successfully set up an Avalanche Subnet, deployed Solidity contracts, and interacted with them using Remix and MetaMask.
