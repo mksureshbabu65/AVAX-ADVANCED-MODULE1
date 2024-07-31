@@ -1,13 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
+
 contract ERC20 {
     uint public totalSupply;
     mapping(address => uint) public balanceOf;
     mapping(address => mapping(address => uint)) public allowance;
-    string public name = "RYZ LIMITLESS";
-    string public symbol = "RYZ";
-    uint8 public decimals = 18;
+    string public name = "NINTEY ONE";
+    string public symbol = "NTO";
+    uint8 public decimals = 19;
 
 		event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
@@ -47,5 +48,6 @@ contract ERC20 {
         balanceOf[msg.sender] -= amount;
         totalSupply -= amount;
         emit Transfer(msg.sender, address(0), amount);
-    }
+  
+}
 }
