@@ -1,11 +1,25 @@
-Certainly! Here's the revised README file in a more structured format, suitable for GitHub:
-
----
 
 # Avalanche Subnet Creation and Smart Contract Deployment
 
 This README provides a step-by-step guide for creating an Avalanche Subnet and deploying Solidity smart contracts using Remix and MetaMask.
 
+## Deploying and Interacting with Smart Contracts
+
+### 1. Open Remix IDE
+
+Access Remix at [Remix IDE](https://remix.ethereum.org/).
+
+### 2. Set Up MetaMask with Subnet
+
+In the Remix IDE, navigate to the "Deploy & Run Transactions" tab. Set the environment to "Injected Web3" and connect MetaMask to your Subnet by selecting your MetaMask account.
+
+### 3. Compile and Deploy Contracts
+
+Insert your Solidity code (e.g., ERC20, Vault contracts) into Remix. Compile the code and deploy the contracts to the Avalanche Subnet using MetaMask.
+
+### 4. Interact with Deployed Contracts
+
+After deployment, use the provided RPC URL and funded address to interact with your contracts.
 ## Prerequisites
 
 Ensure you have the following:
@@ -57,23 +71,6 @@ Use the following information to connect to your Subnet:
 
 > **Note:** To allow API access from other machines, use the flag `--http-host=0.0.0.0`.
 
-## Deploying and Interacting with Smart Contracts
-
-### 1. Open Remix IDE
-
-Access Remix at [Remix IDE](https://remix.ethereum.org/).
-
-### 2. Set Up MetaMask with Subnet
-
-In the Remix IDE, navigate to the "Deploy & Run Transactions" tab. Set the environment to "Injected Web3" and connect MetaMask to your Subnet by selecting your MetaMask account.
-
-### 3. Compile and Deploy Contracts
-
-Insert your Solidity code (e.g., ERC20, Vault contracts) into Remix. Compile the code and deploy the contracts to the Avalanche Subnet using MetaMask.
-
-### 4. Interact with Deployed Contracts
-
-After deployment, use the provided RPC URL and funded address to interact with your contracts.
 
 ## Conclusion
 Submitted By MKSURESH
