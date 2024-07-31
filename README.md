@@ -1,72 +1,80 @@
-# Avalanche Subnet Creation and Deployment Guide
+Certainly! Here's the revised README file in a more structured format, suitable for GitHub:
 
-This guide provides step-by-step instructions on creating an Avalanche Subnet and deploying Solidity code on Remix using MetaMask as the provider.
+---
+
+# Avalanche Subnet Creation and Smart Contract Deployment
+
+This README provides a step-by-step guide for creating an Avalanche Subnet and deploying Solidity smart contracts using Remix and MetaMask.
 
 ## Prerequisites
 
-- MetaMask installed in your browser
-- Avalanche-CLI installed locally
-- Remix IDE (https://remix.ethereum.org/)
-- Basic understanding of Solidity and smart contract development
+Ensure you have the following:
+
+- **MetaMask** extension installed in your browser
+- **Avalanche-CLI** installed on your local machine
+- Access to **Remix IDE**: [Remix IDE](https://remix.ethereum.org/)
+- Basic knowledge of **Solidity** and smart contract development
 
 ## Installation of Avalanche-CLI
 
-To install the Avalanche-CLI, run the following command in your terminal:
+Install Avalanche-CLI by running the following command in your terminal:
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/ava-labs/avalanche-cli/main/scripts/install.sh | sh -s
 ```
 
-## Creating an Avalanche Subnet
+## Subnet Creation
 
-1. **Run the Subnet Creation Wizard:**
+### 1. Start Subnet Creation Wizard
 
-   Choose a name for your Subnet (e.g., `mySubnet`) and execute the following command:
+To create a new Subnet, choose a name (e.g., `mySubnet`) and execute:
 
-   ```bash
-   avalanche subnet create mySubnet
-   ```
+```bash
+avalanche subnet create mySubnet
+```
 
-   Follow the wizard to configure your Subnet parameters.
+Follow the interactive prompts to configure your Subnet settings.
 
-2. **Deploy the Subnet Locally:**
+### 2. Deploy Subnet Locally
 
-   Deploy your Subnet locally by running:
+To deploy the Subnet locally, run:
 
-   ```bash
-   avalanche subnet deploy mySubnet
-   ```
+```bash
+avalanche subnet deploy mySubnet
+```
 
-   Select "Local Network" when prompted.
+When prompted, select the "Local Network" option.
 
-3. **Interact with Your Subnet:**
+### 3. Connect to the Subnet
 
-   Use the provided connection details to connect to your Subnet:
+Use the following information to connect to your Subnet:
 
-   - **RPC URL:** (http://127.0.0.1:9650/ext/bc/2s6py1VRcHaFLFs2tmrLTAWrtmk5W2ALFkn8ukTqEfrqBPKrdW/rpc)
-   - **Funded address:** 0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC with 1000000 (10^18)
-   - **Network name:** mySubnet
-   - **Chain ID:** 4328
-   - **Currency Symbol:** ETHARAN
+- **RPC URL:** `http://127.0.0.1:9650/ext/bc/2s6py1VRcHaFLFs2tmrLTAWrtmk5W2ALFkn8ukTqEfrqBPKrdW/rpc`
+- **Funded Address:** `0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC` (with 1,000,000 units)
+- **Network Name:** `mySubnet`
+- **Chain ID:** `4328`
+- **Currency Symbol:** `ETHARAN`
 
-   Note: Add `--http-host=0.0.0.0` to the config if you want to allow API calls from other machines.
+> **Note:** To allow API access from other machines, use the flag `--http-host=0.0.0.0`.
 
-## Running Solidity Code on Remix with MetaMask Provider
+## Deploying and Interacting with Smart Contracts
 
-1. **Open Remix IDE:**
+### 1. Open Remix IDE
 
-   Visit [Remix IDE](https://remix.ethereum.org/).
+Access Remix at [Remix IDE](https://remix.ethereum.org/).
 
-2. **Connect to Avalanche Subnet:**
+### 2. Set Up MetaMask with Subnet
 
-   In Remix, go to the "Deploy & Run Transactions" tab. Choose "Injected Web3" as the environment. Connect MetaMask to your Avalanche Subnet by selecting the appropriate account.
+In the Remix IDE, navigate to the "Deploy & Run Transactions" tab. Set the environment to "Injected Web3" and connect MetaMask to your Subnet by selecting your MetaMask account.
 
-3. **Compile and Deploy Solidity Code:**
+### 3. Compile and Deploy Contracts
 
-   Copy and paste your Solidity code (e.g., ERC20 and Vault contracts) into Remix. Compile the code, and deploy the contracts to the Avalanche Subnet using MetaMask.
+Insert your Solidity code (e.g., ERC20, Vault contracts) into Remix. Compile the code and deploy the contracts to the Avalanche Subnet using MetaMask.
 
-4. **Interact with Deployed Contracts:**
+### 4. Interact with Deployed Contracts
 
-   After deployment, you can interact with your contracts using the provided RPC URL and addresses.
+After deployment, use the provided RPC URL and funded address to interact with your contracts.
 
-Congratulations! You have successfully created an Avalanche Subnet, deployed Solidity code, and interacted with the deployed contracts using Remix with MetaMask as the provider.
+## Conclusion
+Submitted By MKSURESH
+You have successfully set up an Avalanche Subnet, deployed Solidity contracts, and interacted with them using Remix and MetaMask.
