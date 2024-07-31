@@ -43,11 +43,11 @@ curl -sSfL https://raw.githubusercontent.com/ava-labs/avalanche-cli/main/scripts
 
    Use the provided connection details to connect to your Subnet:
 
-   - **RPC URL:** http://127.0.0.1:9650/ext/bc/SPqou41AALqxDquEycNYuTJmRvZYbfoV9DYApDJVXKXuwVFPz/rpc
+   - **RPC URL:** (http://127.0.0.1:9650/ext/bc/2s6py1VRcHaFLFs2tmrLTAWrtmk5W2ALFkn8ukTqEfrqBPKrdW/rpc)
    - **Funded address:** 0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC with 1000000 (10^18)
    - **Network name:** mySubnet
-   - **Chain ID:** 54325
-   - **Currency Symbol:** TUTORIAL
+   - **Chain ID:** 4328
+   - **Currency Symbol:** ETHARAN
 
    Note: Add `--http-host=0.0.0.0` to the config if you want to allow API calls from other machines.
 
