@@ -69,7 +69,7 @@ Use the following information to connect to your Subnet:
 - **Chain ID:** `4328`
 - **Currency Symbol:** `ETHARAN`
 
-> **Note:** To allow API access from other machines, use the flag `--http-host=0.0.0.0`.
+
 
 
 ## Conclusion
